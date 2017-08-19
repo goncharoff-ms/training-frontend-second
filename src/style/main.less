@@ -1,0 +1,268 @@
+@import url('../vendor/normalize.min.css');
+// for animation classes
+@import url('../vendor/animate.css');
+
+
+@font-face {
+    font-family: OpenSansBold; /* Имя шрифта */
+    src: url(../fonts/OpenSans-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+
+@font-face {
+    font-family: OpenSansRegular; /* Имя шрифта */
+    src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+
+@font-face {
+    font-family: OpenSansSemiBold; /* Имя шрифта */
+    src: url(../fonts/OpenSans-SemiBold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@width-page: 1280px;
+
+.landing {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.landing__header {
+	display: block;
+	min-width: @width-page;
+	height: 800px;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.header {
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	box-shadow: inset 0px -520px 66px 7px rgba(0,0,0,0.30);
+}
+
+.header__logo {
+	width: 273px;
+	height: 273px; 
+	margin-top: 70px;
+	margin-bottom: 80px;
+}
+
+.header__text {
+	margin: 0;
+	font-family: OpenSansSemiBold, sans-serif;
+	color: white;
+	text-transform: uppercase;
+	font-size: 48px;
+}
+
+.header__text_down {
+	margin: 0;
+	font-family: OpenSansBold, sans-serif;
+}
+
+
+
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	width: @width-page;
+	height: 400px;
+	padding-top: 160px;
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-bottom: 100px;
+
+	.content__item:first-child {
+		margin-right: 75px;
+	}
+}
+
+.content__item {
+	display: inline-block;
+	width: 400px;
+	height: 110px;
+}
+
+.content__item-img {
+	float: left;
+}
+
+.content__item-text {
+	margin-left: 125px;
+	position: relative;
+	bottom: 8px;
+	header {
+		font-family: OpenSansSemiBold, sans-serif;
+		font-size: 27px;
+	}
+
+	p {
+		font-family: OpenSansRegular, sans-serif;
+		font-size: 14px;
+		color: rgb(79, 78, 78);
+		text-align: left;
+		line-height: 23px;
+	}
+}
+
+.main-content {
+	min-width: @width-page;
+	box-sizing: border-box;
+	background: linear-gradient(-9deg, rgb(10, 175, 110) 50%, rgb(50, 208, 135) 50%);
+	height: 1350px;
+}
+
+.core {
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+	width: @width-page;
+	height: 1350px;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.core__mobile {
+	margin-left: auto;
+	margin-right: 570px;
+	width: 502px;
+	height: 502px;
+	background-image: url('../img/shadow-m.png');
+	background-repeat: no-repeat;
+}
+
+.core__text {
+	
+	width: 650px;
+	color: white;
+}
+
+.core__text_mobile {
+	position: relative;
+	top: 220px;
+	left: 90px;
+}
+
+.core__text-header {
+	font-family: OpenSansSemiBold, sans-serif;
+	font-size: 39px;
+}
+
+.core__text-main {
+	font-family: OpenSansRegular, sans-serif;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.core__notebook {
+	text-align: left;
+	margin-left: auto;
+	margin-top: 330px;
+	margin-right: 790px;
+	width: 505px;
+	height: 430px;
+	background-image: url('../img/shadow-pc.png');
+	background-repeat: no-repeat;
+}
+
+.core__text_notebook {
+	position: relative;
+	left: 570px;
+	bottom: 12px;
+}
+
+.map {
+	position: relative;
+	min-width: @width-page;
+	height: 624px;
+	text-align: center;
+}
+
+.map__google {
+	position: absolute;
+	height: 640px;
+	width: 100%;
+	z-index: 0;
+}
+
+.map__form {
+	position: relative;
+	left: 50%;
+	top: 160px;
+	margin-left: -215px;
+	background-color: rgba(255, 255, 255,0.7);
+	border-radius: 215px;
+	width: 430px;
+	height: 430px;
+	z-index: 100;
+	box-sizing: border-box;
+	padding-top: 110px;
+	text-align: center;
+}
+
+.map__input {
+	border: 1px solid rgb(216, 216, 216);
+	padding: 15px;
+	box-sizing: border-box;
+	height: 30px;
+	width: 280px;
+}
+
+.map__input_name {
+	margin-bottom: 15px;
+}
+
+.map__input_email {
+	margin-bottom: 20px;
+}
+
+.map__input_textarea {
+	margin-left: 75px;
+	display: block;
+	height: 110px;
+	resize: none;
+	margin-bottom: 25px;
+}
+
+.map__button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 33px;
+	width: 65px;
+	height: 65px;
+	border: 0;
+	background: transparent;
+}
+
+.map__button:hover {
+	opacity: 0.7;
+}
+
+.landing__footer {
+	margin-top: 15px;
+	box-sizing: border-box;
+	min-width: @width-page;
+	display: block;
+	height: 50px;
+	background-color: rgb(50, 208, 135);
+	text-align: center;
+	padding-top: 20px;
+	p {
+		display: block;
+		margin: 0;
+		font-style: OpenSansRegular, sans-serif;
+		font-size: 14px;
+		color: white;
+	}
+}
+
